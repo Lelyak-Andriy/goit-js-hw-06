@@ -22,7 +22,8 @@ const createGalleryItem = ({ url, alt }) =>
   const galleryMarkup = images.reduce(
     (acc, item) => acc + createGalleryItem(item),
     "");
-    
+ 
+
 galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
 // Оформлення галереї
 galleryList.setAttribute("style", "list-style-type:none; display: flex;");
